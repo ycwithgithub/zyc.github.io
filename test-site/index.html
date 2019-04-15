@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>my page</title>
+        <script type="text/javascript" src="/lib-js/jquery.table2excel.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200,200,200);
+            letter-spacing: 1px;
+            font-size: 8px;
+        }
+        th,td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 5px 15px;
+            text-align: center;
+        }
+        .th-head-self {
+            background-color: #B0E7BA;
+            /* text-emphasis-color: #26C343; */
+            font-size: 10px #26C343;
+        }
+        .bigDiv {
+            margin: 0,20px,20px,20px;
+            border: 5px solid black;
+        }
+        </style>
+        
+    </head>
+    <script>
+    function table2Excel(filename){
+	    $(".table2excel").table2excel({
+		exclude: ".noExl",//class="noExl"的列不导出
+		name: "Excel Document Name",
+		filename: filename,//文件名称
+		fileext: ".xls",//文件后缀名
+		exclude_img: true,//导出图片
+		exclude_links: true,//导出超链接
+		exclude_inputs: true//导出输入框内容
+	    });
+    }
+    </script>
+    <body>
+        <div class="bigDiv">
+        
+        <img src="../images/1通知.png" alt="kkkkkmkmmy page image"/>
+        <br/>
+        <p>
+            我的<del>虎狗</del>脾气<u>非常</u><strong>暴躁</strong>！
+        </p>
+        <div>
+            <input type="button" value="sssd" onclick="table2Excel('test.xls')"/>
+            <table class="table2excel">
+                <tr>
+                    <th colspan="23">内蒙古自治区气象局2018年09月01日-2018年09月30日应急值班统计表</th>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="th-head-self"><font color="#1C8630">处室</font></th>
+                    <th rowspan="2" class="th-head-self"><font color="#1C8630">姓名</font></th>
+                    <th rowspan="2" class="th-head-self"><font color="#1C8630">身份</font></th>
+                    <th colspan="6" class="th-head-self"><font color="#1C8630">工作日值班</font></th>
+                    <th colspan="6" class="th-head-self"><font color="#1C8630">双休日值班</font></th>
+                    <th colspan="6" class="th-head-self"><font color="#1C8630">法定节假日值班</font></th>
+                    <th rowspan="2" class="th-head-self"><font color="#1C8630">合计金额</font></th>
+                    <th rowspan="2" class="th-head-self"><font color="#1C8630">签字</font></th>
+                </tr>
+                <tr>
+                    <th colspan="2" class="th-head-self"><font color="#1C8630">上午班</font></th>
+                    <th colspan="2" class="th-head-self"><font color="#1C8630">下午班</font></th>
+                    <th colspan="2" class="th-head-self"><font color="#1C8630">夜班</font></th>
+                    <th colspan="2" class="th-head-self"><font color="#1C8630">上午班</font></th>
+                    <th colspan="2" class="th-head-self"><font color="#1C8630">下午班</font></th>
+                    <th colspan="2" class="th-head-self"><font color="#1C8630">夜班</font></th>
+                    <th colspan="2" class="th-head-self"><font color="#1C8630">上午班</font></th>
+                    <th colspan="2" class="th-head-self"><font color="#1C8630">下午班</font></th>
+                    <th colspan="2" class="th-head-self"><font color="#1C8630">夜班</font></th>
+                </tr>
+                <tr>
+                    <th rowspan="7">办公室</th>
+                </tr>
+                <tr>
+                    <td>高建国</td>
+                    <td rowspan="2">带班领导</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>2</td>
+                    <td>400</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>2</td>
+                    <td>400</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>2</td>
+                    <td>400</td>
+                    <td>1200</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>王辰懿</td>
+                    <!-- <td>daibanlingdao</td> -->
+                    <td>2</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>2</td>
+                    <td>400</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>2</td>
+                    <td>400</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>2</td>
+                    <td>400</td>
+                    <td>1200</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                        <td>秦之信</td>
+                        <td rowspan="2">值班人员</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>2</td>
+                        <td>400</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>2</td>
+                        <td>400</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>2</td>
+                        <td>400</td>
+                        <td>1200</td>
+                        <td>&nbsp;</td>
+                </tr>
+                <tr>
+                        <td>万衡</td>
+                        <!-- <td rowspan="2">带班领导</td> -->
+                        <td>2</td>
+                        <td>0</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>2</td>
+                        <td>400</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>2</td>
+                        <td>400</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>2</td>
+                        <td>400</td>
+                        <td>1200</td>
+                        <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="20">&nbsp;</td>
+                    <td>4800</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="22">合计人民币大写:肆仟捌佰元整  ￥:4800.00</td>
+                </tr>
+
+            </table>
+        </div>
+            
+    </div>
+    </body>
+</html>
